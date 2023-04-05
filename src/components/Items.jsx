@@ -21,23 +21,31 @@ function Items() {
     );
   };
 
+ 
   return (
     <div className="App">
-      <header>
-        <div className='CartNav'>
-        <button onClick={() => navigateTo(PAGE_CART)}>
-          Cart ({getCartTotal()})
-        </button>
-        </div>
-        <button onClick={() => navigateTo(PAGE_PRODUCTS)}>
-          View Products
-        </button>
-      </header>
       {page === PAGE_PRODUCTS && (
-        <Products cart={cart} setCart={setCart} />
+        <>
+          <Products cart={cart} setCart={setCart} />
+          <div className='ProductButton'>
+            <button onClick={() => navigateTo(PAGE_CART)}>
+              Cart ({getCartTotal()})
+            </button>
+            <button onClick={() => navigateTo(PAGE_PRODUCTS)}>
+              View Products
+            </button>
+          </div>
+        </>
       )}
       {page === PAGE_CART && (
-        <Cart cart={cart} setCart={setCart} />
+        <>
+          <Cart cart={cart} setCart={setCart} />
+          <div className='ProductButton'>
+            <button onClick={() => navigateTo(PAGE_PRODUCTS)}>
+              Continue Shopping
+            </button>
+          </div>
+        </>
       )}
     </div>
   );

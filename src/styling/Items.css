@@ -21,14 +21,14 @@
   }
   .CartButton button  {
     height: 35px;
-    width: 40%;
+    width: 38%;
     outline: none;
     border: none;
     background: #f6a21b; 
     font-size: .9rem;
     font-weight: 500;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 10px;
     margin-top: 10px;
   }
 header{
@@ -36,6 +36,50 @@ header{
   margin-left: 50%;
   margin-top: 50px;
 }
+.ProductButton button{
+  height: 40px;
+  width: 20%;
+  outline: none;
+  border: none;
+  background: #f0e8dc; 
+  font-size: .9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: rgb(1, 10, 13) 0px 10px 20px -15px;
+} 
+
+input[type="text"] {
+  margin-top: 30px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 20px;  */
+}
+/* input{
+width: 50%;
+} */
+.products-container,
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.ProductButton {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
+
 @media only screen and (max-width: 768px) {
     .products {
      grid-template-columns: repeat(2, 1fr);
