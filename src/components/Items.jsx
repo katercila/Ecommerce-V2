@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styling/Items.css';
-import Products from '../components/Products';
+// import Products from '../components/Products';
 import Cart from '../components/Cart'; // import the Cart component
+import ProductArray from '../components/ProductArray'
 
 const PAGE_PRODUCTS = 'products';
 const PAGE_CART = 'cart';
@@ -26,7 +27,8 @@ function Items() {
     <div className="App">
       {page === PAGE_PRODUCTS && (
         <>
-          <Products cart={cart} setCart={setCart} />
+        <ProductArray cart={cart} setCart={setCart} />
+          {/* <Products cart={cart} setCart={setCart} /> */}
           <div className='ProductButton'>
             <button onClick={() => navigateTo(PAGE_CART)}>
               Cart ({getCartTotal()})
