@@ -1,0 +1,70 @@
+/* SLIDESHOW */
+.slideshow-container {
+    max-width: 700px;
+    max-height: 500px;
+    /* fixed or relative? */
+    position: relative;
+    margin: auto;
+    padding-top: 100px;
+   
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: lime ;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #27b8ed;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    h1{
+      text-align: center;
+      font-family: custom,Univers,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+     /* BOXES IN MIDDLE */
+.boxes{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 50px;
+}
+.box1 {
+      width: 225px;
+      height: 10px;
+}
+  .box2 {
+      width: 225px;
+      height: 10px;
+   
+  }
+  article {
+    padding-top: 70px;
+    font-size: .90rem;
+    text-transform: uppercase;
+    color: #656565;
+    font-family: custom,Univers,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.Give{
+  margin-top: none;
+}

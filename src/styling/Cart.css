@@ -1,0 +1,40 @@
+.RemoveButton button {
+    height: 35px;
+       width: 40%;
+       outline: none;
+       border: none;
+       background: #f6a21b; 
+       font-size: .9rem;
+       font-weight: 500;
+       cursor: pointer;
+       border-radius: 100px;
+       margin-top: 10px;
+  }
+  
+.ClearButton {
+    display: flex;
+    justify-content: center;
+}
+
+.ClearButton button {
+    height: 35px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: #f6a21b; 
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-top: 10px;  
+}
+.ClearButton button:hover {
+    background-color: #f3be86;
+  }
+.Cost {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: custom,Univers,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  }

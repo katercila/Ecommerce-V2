@@ -1,0 +1,33 @@
+/* NAV BAR */
+nav {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    box-shadow: 0px 5px 0px #dedede;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+    height: 20px;
+    font-family: custom,Univers,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(7, 3, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: lime;
+  }
